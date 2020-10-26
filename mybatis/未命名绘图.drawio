@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-26T12:45:36.648Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="me-299LSLrMi1CI2OtR3" version="13.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-26T12:49:21.944Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="bsPZix7qglSMhifVY9RJ" version="13.8.2" type="github">
   <diagram id="hl56yfetpkZTC3vXIedy" name="第 1 页">
     <mxGraphModel dx="541" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -148,11 +148,6 @@
         <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-44" value="获取apiServcie,transferService,&lt;br&gt;resultServcie放入对象d的成员属性" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="355" y="730" width="257.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.15;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-9Mtz2GCRb9Vz_m4Vo6k-46" target="-9Mtz2GCRb9Vz_m4Vo6k-58">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="750" y="590" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-46" value="if(shouldICallApi){&lt;br&gt;&amp;nbsp;apiServcie.callApi()&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="355" y="840" width="257.5" height="60" as="geometry" />
         </mxCell>
@@ -170,6 +165,9 @@
         </mxCell>
         <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-58" value="&lt;br&gt;class TranslationApiServiceImpl implement ApiService&lt;br&gt;callApi(){&lt;br&gt;1.线程池取出3个线程分别调用搜狗，度秘，unit的翻译结果&lt;br&gt;2.遍历 future列表&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; Respnse real;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; response=future.get(timeout)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; if response合格：&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;real = response;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; else:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;兜底+1&lt;br&gt;3.if 无real 且兜底&amp;gt;0：&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; real = 兜底.get(0)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 听风&lt;br&gt;4.return new AiResponse(real)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="700" y="130" width="380" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-60" value="重写ApiService,用于调用三方" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="100" width="260" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
