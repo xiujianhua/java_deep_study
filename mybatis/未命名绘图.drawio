@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-27T06:39:07.714Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="9GL60VufT0mYyUUXYA6o" version="13.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-27T07:28:40.927Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="A0EI0TjK_dkqJOsNnhI6" version="13.8.2" type="github">
   <diagram id="hl56yfetpkZTC3vXIedy" name="第 1 页">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -201,8 +201,8 @@
         <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-77" value="未对CheckService重写，&lt;br&gt;使用通用方法，即：&lt;br&gt;.检查版本、检查intent等，&lt;br&gt;本技能无特殊要求&lt;br&gt;&lt;br&gt;一旦不合格则组装dmResponse,并返回" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="800" y="210" width="210" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-79" value="有对TransferService重写，但只重复写了一个与抽象方法，一样的方法，可视为使用默认抽象方法：&lt;br&gt;getNameSpacer():&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="800" y="1050" width="210" height="180" as="geometry" />
+        <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-79" value="有对TransferService重写，但只重复写了一个与抽象方法，一样的方法，可视为使用默认抽象方法：&lt;br&gt;getNameSpacer():&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.在唯一的nameSpace模板的nameSpace属性写入 &quot;ai.dueros.device_interface.screen&quot;&lt;br&gt;ge tPayload():&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.根据rpc返回的内容，判定使用哪个Payload模板&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.根据模板上的El表达式所指定的方法，找到并执行对应的方 法，并填充模板属性&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1050" width="340" height="180" as="geometry" />
         </mxCell>
         <mxCell id="-9Mtz2GCRb9Vz_m4Vo6k-82" value="未对ResultService重写，&lt;br&gt;使用默认抽象方法" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="800" y="1260" width="210" height="180" as="geometry" />
