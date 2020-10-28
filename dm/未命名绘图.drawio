@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-28T08:28:07.976Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="FtjSef9vh0MN6EAdN7Wv" version="13.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-28T08:56:45.824Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="oCnTPuc2MBP4wEKxPOni" version="13.8.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="609" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -130,6 +130,9 @@
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-88" value="d.slotService.getSlots()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="765" y="1280" width="257.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-132" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NkhUbfQ3-2C-shlZuiyF-89" target="NkhUbfQ3-2C-shlZuiyF-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-89" value="d.slotService.checkSlot()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="765" y="1380" width="257.5" height="60" as="geometry" />
         </mxCell>
@@ -236,6 +239,9 @@
         </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-129" value="继承CommunicationSlotImpl类，并重写部分方法&lt;br&gt;PhoneSlotServiceImpl.getSlots(){&lt;br&gt;1.当对话状态为in_progress或者week-completed时，调用classify进行提槽&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;如果进行提槽且提到槽位：&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.1 规则槽位进行纠正：对realType进行映射变更&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.2 对算法槽位进行纠正：添加槽位名称&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.3 将槽位放入NluSlotResponse&lt;br&gt;2.判断DmInfo里问槽是否是联系人槽位（间接需要多轮），&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;如果是的话利用query生成一个完整槽位，放入NluSlotResponse&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1085" y="1140" width="420" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-131" value="继承CommunicationSlotImpl类，并重写部分方法&lt;br&gt;PhoneSlotServiceImpl.doCheckSlots(){&lt;br&gt;&amp;nbsp; &amp;nbsp; 提取DmInfo（多轮限定？）中的槽位信息，对任意文本联系人槽位处理&lt;br&gt;&amp;nbsp; &amp;nbsp; 尝试在rule服务内查看rawValue:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 有结果则: realtype改为yellow与value改变成相应号码&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 没有结果则: realType设置为contacter&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1085" y="1325" width="420" height="115" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
