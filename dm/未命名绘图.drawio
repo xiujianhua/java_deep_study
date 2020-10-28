@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-28T07:13:58.753Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="MEpJ0UTBreiU0n8Nx5M_" version="13.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-28T08:05:19.262Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="AlkII46ZK_aDAy-iwAjD" version="13.8.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1287" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="609" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -118,6 +118,9 @@
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-86" value="获取checkService，slotService&lt;br&gt;,放入对象d的成员属性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="765" y="1080" width="257.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-128" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NkhUbfQ3-2C-shlZuiyF-87" target="NkhUbfQ3-2C-shlZuiyF-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-87" value="if(d.checkService.shouldInitCheck){&lt;br&gt;&amp;nbsp;d.checkService.doInitCheck（）&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="770" y="1180" width="252.5" height="60" as="geometry" />
         </mxCell>
@@ -224,6 +227,12 @@
         </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-126" value="getIntemReasult()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="570" y="870" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-127" value="继承CommuniccationCheckImpl并重写部分方法&lt;br&gt;checkService（）{&lt;br&gt;&amp;nbsp; &amp;nbsp; 1、当是1+且OStype=1时，channel号设置为oppo&lt;br&gt;&amp;nbsp; &amp;nbsp; 2、channel号校验，version校验&lt;br&gt;&amp;nbsp; &amp;nbsp; 3、获取用于权限，用于意图校验&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1090" y="1170" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-129" value="继承CommunicationSlotImpl类，并重写部分方法&lt;br&gt;PhoneSlotServiceImpl.getSlots(){&lt;br&gt;1.当对话状态为in_progress或者week-completed时，调用classify进行提槽&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;如果进行提槽且提到槽位：&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.1.规则槽位进行纠正：对realType进行映射变更&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.2.对算法槽位进行纠正：添加槽位名称&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1090" y="1280" width="420" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
