@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-29T06:30:33.689Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="rsmf-xH5YNgk2SQm3Ix3" version="13.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-29T06:42:32.080Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="b5I5tucDjTXIZ-LHMwgn" version="13.8.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="609" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1673" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -166,11 +166,20 @@
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-96" value="if(DirectiveService.autoCoverElicitSlot()==null){&lt;br&gt;DrectiveServcie.getDiirective()&lt;br&gt;}&lt;br&gt;通用指令执行" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="765" y="2020" width="257.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-149" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NkhUbfQ3-2C-shlZuiyF-97" target="NkhUbfQ3-2C-shlZuiyF-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-97" value="d.transferService.getNasmeSpacer()" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="765" y="2130" width="257.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-151" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NkhUbfQ3-2C-shlZuiyF-98" target="NkhUbfQ3-2C-shlZuiyF-150">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-98" value="d.transferService.getPayload()" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="765" y="2240" width="257.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-152" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NkhUbfQ3-2C-shlZuiyF-99" target="NkhUbfQ3-2C-shlZuiyF-148">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-99" value="d.resultService.getResult()" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="765" y="2350" width="257.5" height="60" as="geometry" />
@@ -272,6 +281,15 @@
         </mxCell>
         <mxCell id="NkhUbfQ3-2C-shlZuiyF-145" value="&lt;span&gt;继承CommunicationApiImpl类，并重写部分方法：&lt;/span&gt;&lt;br&gt;&lt;span&gt;PhoneApiServiceImpl.callApi(){&lt;/span&gt;&lt;br&gt;强业务逻辑，需要更了解业务才能看懂..." style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#788AA3;fillColor=#B2C9AB;fontColor=#46495D;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1085" y="1710" width="475" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-147" value="未对TransferService重写&lt;br&gt;使用默认抽象方法：&lt;br&gt;根据intent填充nameSpace属性" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1090" y="2020" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-148" value="未对ResultService重写，&lt;br&gt;使用默认抽象方法：&lt;br&gt;从request中将所有用到的属性提取出来，组装成response的intent、nlg等属性，并返回" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1090" y="2330" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NkhUbfQ3-2C-shlZuiyF-150" value="未对TransferService重写，&lt;br&gt;使用默认抽象方法：&lt;br&gt;&lt;br&gt;getPayload():&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.根据request返回的内容，判定使用哪个Payload模板&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.根据模板上的El表达式所指定的方法，找到并执行对应的方 法，并填充模板属性" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1090" y="2170" width="340" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
