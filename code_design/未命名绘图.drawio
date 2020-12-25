@@ -1,9 +1,18 @@
-<mxfile host="app.diagrams.net" modified="2020-12-25T07:24:44.517Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="F2wy4oC7sWi3rVRfLyen" version="13.10.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-25T08:28:29.174Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="63TzyL1jy1a1cOa0-mgD" version="13.10.4" type="github">
   <diagram id="IH-vpjTIQTwsLYozW_Uu" name="第 1 页">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="asruQh3GKz0RM7dly7mq-36" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="310" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-33" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="310" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-31" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=bottom;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="310" height="420" as="geometry" />
+        </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-1" target="asruQh3GKz0RM7dly7mq-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -84,6 +93,15 @@
         </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-29" value="合成复用原则 通过继承来进行复用的主要问题在于继承复用会破坏系统的封装性。&lt;br&gt;因为继承会将基类的实现细节暴露给子类，由于基类的内部细节通常对子类来说是可见的，所以这种复用又称“白箱”复用，如果基类发生改变，那么子类的实现也不得不发生改变；&lt;br&gt;从基类继承而来的实现是静态的，不可能在运行时发生改变，没有足够的灵活性。 &lt;br&gt;一般而言，如果两个类之间是“Has-A”的关系应使用组合或聚合，如果是“Is-A”关系可使用继承。&lt;br&gt;&quot;Is-A&quot;是严格的分类学意义上的定义，意思是一个类是另一个类的&quot;一种&quot;，而&quot;Has-A&quot;则不同，它表示某一个角色具有某一项责任。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="870" y="510" width="720" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-32" value="强调封装" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="152.5" y="800" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-34" value="继承与多态" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="390" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-35" value="总纲" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="190" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
