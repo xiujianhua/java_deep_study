@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-25T07:04:56.235Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="CXxrCMjXava_QIIbscdG" version="13.10.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-25T07:24:44.517Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="F2wy4oC7sWi3rVRfLyen" version="13.10.4" type="github">
   <diagram id="IH-vpjTIQTwsLYozW_Uu" name="第 1 页">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -19,6 +19,9 @@
         <mxCell id="asruQh3GKz0RM7dly7mq-4" value="依赖倒转原则&lt;br&gt;Dependence Inversion Principle&lt;br&gt;DIP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="230" width="230" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-6" target="asruQh3GKz0RM7dly7mq-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-6" value="抽象不应该依赖于细节，细节应该依赖于抽象" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="230" width="410" height="60" as="geometry" />
         </mxCell>
@@ -27,6 +30,9 @@
         </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-7" value="里氏代换原则&lt;br&gt;Liskov Substitution Principle&lt;br&gt;LSP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="330" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-8" target="asruQh3GKz0RM7dly7mq-25">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-8" value="所有引用基类对象的地方能够透明地使用其子类的对象" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="330" width="410" height="60" as="geometry" />
@@ -45,6 +51,9 @@
         </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-11" value="合成复用原则&lt;br&gt;Composite Reuse Principle&lt;br&gt;SRP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="530" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-13" target="asruQh3GKz0RM7dly7mq-29">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-13" value="尽量使用组合，而不是继承来达到复用的目的" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="530" width="410" height="60" as="geometry" />
@@ -66,6 +75,15 @@
         </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-23" value="使用多个专用的接口，而不是使用单一的接口" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="730" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-25" value="里氏代换原则是对“开-闭”原则的补充。实现“开-闭”原则的关键步骤就是抽象化。&lt;br&gt;而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。需要注意以下几点： &lt;br&gt;（1）子类的所有方法必须在父类中声明，或子类必须实现父类中声明的所有方法。 &lt;br&gt;（2）尽量把父类设计为抽象类或者接口，让子类继承父类或实现父接口，并实现在父类中声明的方法。 &lt;br&gt;&lt;div&gt;&lt;span&gt;（3）子类不应该覆盖父类的非抽象方法（可以重载，但一定要调父类的方法）。&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="870" y="315" width="700" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-27" value="在实现依赖倒转原则时，我们需要针对抽象层编程，而将具体类的对象通过依赖注入的方式注入到其他对象中，依赖注入是指当一个对象要与其他对象发生依赖关系时，通过抽象来注入所依赖的对象。常用的注入方式有三种，分别是：构造注入，设值注入（Setter注入）和接口注入。&lt;br&gt;&amp;nbsp;（1）构造注入是指通过构造函数来传入具体类的对象。 &lt;br&gt;（2）设值注入是指通过Setter方法来传入具体类的对象。 &lt;br&gt;（3）接口注入是指通过在接口中声明的业务方法来传入具体类的对象。 &lt;br&gt;这些方法在定义时使用的是抽象类型，在运行时再传入具体类型的对象，由子类对象来覆盖父类对象。 开闭原则是目标，里氏代换原则是基础，依赖倒转原则是手段。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="870" y="170" width="860" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-29" value="合成复用原则 通过继承来进行复用的主要问题在于继承复用会破坏系统的封装性。&lt;br&gt;因为继承会将基类的实现细节暴露给子类，由于基类的内部细节通常对子类来说是可见的，所以这种复用又称“白箱”复用，如果基类发生改变，那么子类的实现也不得不发生改变；&lt;br&gt;从基类继承而来的实现是静态的，不可能在运行时发生改变，没有足够的灵活性。 &lt;br&gt;一般而言，如果两个类之间是“Has-A”的关系应使用组合或聚合，如果是“Is-A”关系可使用继承。&lt;br&gt;&quot;Is-A&quot;是严格的分类学意义上的定义，意思是一个类是另一个类的&quot;一种&quot;，而&quot;Has-A&quot;则不同，它表示某一个角色具有某一项责任。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="870" y="510" width="720" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
