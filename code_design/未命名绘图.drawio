@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-25T08:28:29.174Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="63TzyL1jy1a1cOa0-mgD" version="13.10.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-25T08:30:21.730Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="p9la8mf7JyY8x7aeyM9H" version="13.10.4" type="github">
   <diagram id="IH-vpjTIQTwsLYozW_Uu" name="第 1 页">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -102,6 +102,9 @@
         </mxCell>
         <mxCell id="asruQh3GKz0RM7dly7mq-35" value="总纲" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="190" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-38" value="面向对象三大特征：封装，继承，多态" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="40" width="310" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
