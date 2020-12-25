@@ -1,1 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2020-12-25T06:44:54.337Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" version="13.10.4" etag="I8WPFAQfuaw6nz50iwFk" type="github"><diagram id="IH-vpjTIQTwsLYozW_Uu">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-25T07:04:56.235Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="CXxrCMjXava_QIIbscdG" version="13.10.4" type="github">
+  <diagram id="IH-vpjTIQTwsLYozW_Uu" name="第 1 页">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="asruQh3GKz0RM7dly7mq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-1" target="asruQh3GKz0RM7dly7mq-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-1" value="开闭原则&lt;br&gt;Open-Closed Principle&lt;br&gt;OPC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-2" value="对扩展开放，对修改闭合" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="130" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-4" target="asruQh3GKz0RM7dly7mq-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-4" value="依赖倒转原则&lt;br&gt;Dependence Inversion Principle&lt;br&gt;DIP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-6" value="抽象不应该依赖于细节，细节应该依赖于抽象" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="230" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-7" target="asruQh3GKz0RM7dly7mq-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-7" value="里氏代换原则&lt;br&gt;Liskov Substitution Principle&lt;br&gt;LSP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="330" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-8" value="所有引用基类对象的地方能够透明地使用其子类的对象" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-9" target="asruQh3GKz0RM7dly7mq-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-9" value="单一职责原则&lt;br&gt;Single Responsibility Principle&lt;br&gt;SRP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="430" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-10" value="一个类只负责一个功能领域的相应职责" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="430" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-11" target="asruQh3GKz0RM7dly7mq-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-11" value="合成复用原则&lt;br&gt;Composite Reuse Principle&lt;br&gt;SRP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="530" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-13" value="尽量使用组合，而不是继承来达到复用的目的" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="530" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-14" target="asruQh3GKz0RM7dly7mq-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-14" value="迪米特法则&lt;br&gt;Law Of Demeter&amp;nbsp;&lt;br&gt;LOP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="630" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-15" value="一个软件实体应该尽可能少的与其他实体发生相互作用" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="630" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="asruQh3GKz0RM7dly7mq-22" target="asruQh3GKz0RM7dly7mq-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-22" value="接口隔离原则&lt;br&gt;Interfacer Segregation Principle&lt;br&gt;ISP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="730" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="asruQh3GKz0RM7dly7mq-23" value="使用多个专用的接口，而不是使用单一的接口" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="730" width="410" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
