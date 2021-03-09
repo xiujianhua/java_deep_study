@@ -1,0 +1,46 @@
+
+### 特性：
+1. big：数据分片保存，可以保存一个比硬盘还大的文件
+2. fast：同时从多个设备上读取文件，可以提高吞吐量
+3. sharding可以多用户端同时使用
+4. automatic recovery自动修复
+5. single:运行在一个机房
+6. privatge:非面对用户，只供内部使用
+7. big sequential access经过量身定制，便于大型文件的持续写入与读取
+
+### 论文大胆的观点：
+允许存在弱一致性，希望借此获得更高的性能（基于搜索引擎的高容错性）
+
+### 结构
+#### master服务
+存储文件名称，维护了一个chunks表，该表包含了一个文件各个chun所在机器，每个chunk64 MB
+
+#### master 数据结构
+1. 表1：管理文件名和chunk id数组之间映射关系(磁盘)
+2. 表2：chunk id到 如下对象的映射
+    1.  存储服务器（内存，因为当master重启后会和所有chunk服务器进行通讯，并询问他上面保存了哪些chunk）
+    2. chunk 当前的version（硬盘）
+    3. 哪个chunk是primary chunk（内存）
+    4. 过期时间：lease time
+
+3. log:将所有的操作记录以日志的形式放在磁盘中，并记录checkpoint（本地log比数据库更高效：磁盘臂旋转到上次文件写入末尾时可以批量写入。而数据库一般使用btree，它存储数据时不考虑数据存储顺序，也就是说数据很分散，需要通过上个数据节点的pageID取做数据的追加）
+
+4. checkPoint:当master重启后可以从最近的checkPoint回复状态
+
+
+#### 读操作
+1. client发出一个读请求，发出一个文件名以及偏移量来寻找它想要读数据的开始点
+2. master 计算偏移量返回符合偏移量要求的列表：[{chunkId,chunk内偏移（根据计算结果，头尾两个chunk很可能不是满chunk），服务器列表}]
+3. client表异步请求列表内的各个chunk,当请求chunk时会优先请求最近的服务器
+4. 服务器根据chunk id 和偏移量返回数据
+5. client 合并各个chunk的数据
+ 
+#### 写操作
+1. client 请求master 想对某个文件进行追加操作
+2. 当master不知道某个chunk id 的primary chunk时:
+    - 通讯所有chunk service ，获取该 chunk id的 version找到最新的chunk,使他升级成primary（和mater上的version一致才算。问啥不行跟所有服务通信，找出最大的version?因为当master重启询问时，可能最新的version的设备也不在线）
+    - 通知持有该chunk 的 service 更新version
+    - 通知持有该chunk 的 service 更新角色，谁是新的primary(60秒的租期) 谁是 secondaries
+
+
+
